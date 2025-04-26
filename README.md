@@ -93,6 +93,43 @@ python chatbot.py
 ### 🔹 4. Interact with SONI!
 You can ask the chatbot different questions, and it will respond based on its trained dataset.
 
+## 🌐 Deployment
+
+The chatbot was successfully deployed using **Streamlit** via the **Anaconda Prompt** environment. This allows interactive communication with the model through a web-based interface.
+
+### 🛠️ Deployment Steps:
+
+1. **Create a virtual environment in Anaconda Prompt:**
+   ```bash
+   conda create -n chatbot_env python=3.10
+   conda activate chatbot_env
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Run the Streamlit app locally:**
+   ```bash
+   streamlit run app.py
+   ```
+
+4. The chatbot is accessible at `http://localhost:8501/` where users can interact in real time.
+
+### ✅ Deployment Output:
+
+Here’s how the chatbot looks when running locally on Streamlit:
+
+![SONI Chatbot Deployment](./4b77c349-7526-4125-bc89-e4d4a7ca22fd.png)
+
+### 🌍 Cloud Deployment (Optional)
+
+You can also deploy the chatbot publicly using **Streamlit Cloud**:
+- Push your code to GitHub
+- Go to [https://streamlit.io/cloud](https://streamlit.io/cloud)
+- Connect your GitHub repo and deploy with 1 click!
+
 ### 📈 Results & Insights
   - SVM & KNN showed the best classification accuracy (~46-48%) for intent recognition.
   - Transformer embeddings improved model performance.
